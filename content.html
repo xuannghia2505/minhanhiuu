@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Câu Chuyện Tình Yêu</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: #5a2d2d;
+            margin: 0;
+        }
+        .story-container {
+            max-width: 90%;
+            width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #d63384;
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+        }
+        .footer img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .story-container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .heart {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="story-container">
+        <h1>Xin chào em bé iu iu nhớ</h1>
+        <p>Hôm nay anh sẽ kể cho em nghe một câu chuyện. Có thể em không tin, nhưng đó là sự thật...</p>
+        <p>Em biết sao không? Có một chuyện anh nhớ rất rõ nhưng anh không nói với em...</p>
+        <p>Anh nhớ rằng, ở kiếp trước, anh có gặp một người...</p>
+        <p>Anh nhớ hôm đó, cũng là một ngày đẹp trời, thời điểm đó vẫn chưa có ánh điện để chiếu sáng, 
+            ánh trắng là thứ soi sáng mà anh vẫn hay thường dựa vào. Trăng thanh gió mát, 
+             anh đang chuẩn bị để nấu cơm cho buổi tối bên trong căn nhà của mình,
+            vì hết gạo nên anh đã dừng lại và bước ra khỏi nhà đến nơi mà có thể mua gạo, để đi đến đó 
+            anh phải băng qua một con sông thật dài, khi anh vừa bước lên thuyền, có một cô gái vội vàng bước lên theo, 
+            nhìn trông như một nàng công chúa nhưng lại sống ở thôn quê mà anh hay lui tới này, côô ấy đã xin anh đi nhờ một đoạn 
+            ở giữa đường rồi xuống trước, anh vẫn đi đến điểm mua gạo của mình.
+            MMua xong anh tay xách bao gạo để trở về nhà, giữa đường anh lại thấy cô ấy một lần nữa, anh đón về chỗ cũ, 
+            mọi chuyện không có gì bất thường cả, nhưng trong thâm tâm anh cứ mãi nghĩ về người đó, nhưng anh đã quên hỏi rằng,
+            tên của nàng ấy là gì, mãi về sau anh cứ nghĩ về một người, anh tìm kiếm khắp nơi nhưng vẫn không tìm thấy 
+            được thông tin của cô ta, rồi suốt những ngày tháng sau đó anh cứ mãi như vậy, sống một đời tương tư về một người 
+            anh chỉ biết nghĩ rằng giá như lúc đó biết tên cô ta, anh sẽ lục tung cả làng để kiếm tìm.
+            Và rồi ông trời nghe thấu nổi lòng anh, nên kiếp này ông đã cho anh gặp em, một người khi thấy lần đầu tiên
+            thôi anh đã có cảm giác em sẽ nằm gọn trong tim anh, lắp đầy mọi thứ trống vắng mà anh cảm nhận được.
+            trong cùng một bối cảnh, anh vẫn yếu đuối nhưng thật may là anh biết được tên em, 
+            và anh cũng mạnh dạng để kết nối đến em, và rồi anh đã có cơ hội để ở bên em yêu em đến bây giờ.   
+            </p>
+        <p>Hết chuyện. Hì hì.</p>
+    </div>
+     <!-- Nút bấm -->
+     <button id="magicButton" onclick="showLove()">Em bé click vào đây nhaa</button>
+
+     <!-- Footer -->
+     <div class="footer" id="loveSection" style="display: none;">
+         <p class="heart">❤️</p>
+         <p><strong>Yêu em bé Minh Anh của anh lắmmmm</strong></p>
+         <img src="./photobooth.jpg" alt="Ảnh của em">
+     </div>
+ 
+     <!-- Audio -->
+     <audio id="loveSong" loop>
+         <source src="./videoplayback.mp3" type="audio/mpeg">
+     </audio>
+ 
+     <script>
+         function showLove() {
+             document.getElementById("magicButton").style.display = "none"; // Ẩn nút
+             document.getElementById("loveSection").style.display = "block"; // Hiện ảnh và trái tim
+             document.getElementById("loveSong").play(); // Phát nhạc
+         }
+     </script>
+ 
+     <style>
+         button {
+             background-color: #ff69b4;
+             color: white;
+             border: none;
+             padding: 10px 20px;
+             font-size: 16px;
+             border-radius: 10px;
+             cursor: pointer;
+             margin-top: 20px;
+             display: block;
+             margin: 20px auto;
+             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+             transition: 0.3s;
+         }
+         button:hover {
+             background-color: #d63384;
+             transform: scale(1.05);
+         }
+     </style>
+</body>
+</html>
